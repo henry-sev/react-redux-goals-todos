@@ -25,13 +25,6 @@ function toggleTodo (id) {
   }
 }
 
-function addGoal (goal) {
-  return {
-    type: ADD_GOAL,
-    goal,
-  }
-}
-
 export function handleAddTodo(name, cb) {
   return (dispatch) => {
     return API.saveTodo(name, cb)
